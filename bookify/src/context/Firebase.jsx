@@ -7,12 +7,12 @@ import { initializeApp } from "firebase/app";
 
 // https://firebase.google.com/docs/web/setup#available-libraries
 const firebaseConfig = {
-  apiKey: "AIzaSyB9ppdVqx4LMpQQ9BGysqyTPtu0oeD6zM0",
-  authDomain: "bookify-48fd3.firebaseapp.com",
-  projectId: "bookify-48fd3",
-  storageBucket: "bookify-48fd3.appspot.com",
-  messagingSenderId: "775159261381",
-  appId: "1:775159261381:web:a4f76405abf0dbc306a8ac"
+  apiKey: process.env.API_KEY,
+  authDomain:  process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env. messagingSenderId,
+  appId:  process.env.appId
 };
 const firebaseApp = initializeApp(firebaseConfig);
 
